@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const SECRET_KEY = process.env.JWT_SECRET;
+const SECRET_KEY = process.env.JWT_SECRET || 'password_key_default';
 
 export const authenticateToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
