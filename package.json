@@ -1,7 +1,7 @@
 {
   "name": "parqueadero-backend",
   "version": "1.0.0",
-  "description": "This project is a modular backend system for managing a parking lot.",
+  "description": "This project is a api for the administration of task.",
   "main": "app.js",
   "type": "module",
   "directories": {
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victorsvelandia/parqueadero-backend.git"
+    "url": "git+https://github.com/victorsvelandia/ToDoList-backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/victorsvelandia/parqueadero-backend/issues"
+    "url": "https://github.com/victorsvelandia/ToDoList-backend/issues"
   },
-  "homepage": "https://github.com/victorsvelandia/parqueadero-backend#readme",
+  "homepage": "https://github.com/victorsvelandia/ToDoList-backend#readme",
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
