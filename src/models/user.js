@@ -7,22 +7,22 @@ export default (sequelize) => {
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
         },
-        firstName: {
+        primerNombre: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: false,
         },
-        secondName: {
+        segundoNombre: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: false,
         },
-        lastName: {
+        primerApellido: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: false,
         },
-        secondlastName: {
+        segundoApellido: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: false,

@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 
 export default (sequelize) => {
-    const User = sequelize.define('Task', {
+    const Task = sequelize.define('Task', {
         id: {
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV4,
@@ -14,7 +14,15 @@ export default (sequelize) => {
         descripcion: {
             type: DataTypes.STRING(256),
             allowNull: false
-        }
+        },
+        idUser: {
+            type: DataTypes.UUID,
+            allowNull: false,
+            references: {
+                model: 'users', 
+                key: 'id',
+            },
+        },
     }, {
         tableName: 'tasks',
         timestamps: true,
@@ -22,5 +30,5 @@ export default (sequelize) => {
     });
     
 
-    return User;
+    return Task;
 }

@@ -1,4 +1,3 @@
-import { where } from 'sequelize';
 import { User } from '../models/index.js';
 import { validatePassword, generateToken } from '../services/authService.js';
 
